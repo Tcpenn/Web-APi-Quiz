@@ -1,15 +1,199 @@
 * {
-    
+    padding: 5px;
+    margin: 0;
 }
-   
 
 header {
-    text-align: center;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: underline;
-  
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    padding: 12px;
 }
+
+header h1 {
+    padding: 10px;
+    font-size: 1.25;
+}
+
+#timer {
+    font-size: 1.5rem;
+    padding: 8px;
+    font-weight: bold;
+    margin: auto 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    margin: auto;
+}
+
+#title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+#question {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 10px;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    margin: 5px auto;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 7px;
+    width: auto;
+}
+
+ul li:hover {
+    text-decoration: underline;
+}
+
+ul li input {
+    margin: 5px;
+    padding: 5px;
+}
+
+ul li label {
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 15px;
+}
+
+#submit {
+    margin: 10px auto;
+    font-size: 1.5rem;
+    padding: 8px;
+    border-radius: 15px;
+    width: fit-content;
+    background-color: black;
+    color: white;
+}
+
+#submit:hover {
+    text-decoration: underline;
+    padding: 10px;
+}
+
+.feedback {
+    margin: 5px auto;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* styles for the final page on the quiz */
+#congrats {
+    margin: 15px;
+    font-size: 2.75rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#score, #highscore {
+    margin: 15px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#play-again {
+    margin: 5px auto;
+    font-size: 1.5rem;
+    padding: 12px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+}
+
+#play-again:hover {
+    padding: 15px;
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 740px) {
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #congrats {
+        font-size: 2.25rem;
+        margin: 10px;
+    }
+
+    #score, #highscore {
+        font-size: 2rem;
+        margin: 10px;
+    }
+
+    #play-again {
+        font-size: 1.25rem;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+
+    #title {
+        font-size: 1.25rem;
+    }
+
+    #timer {
+        margin: 0;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    #question {
+        font-size: 1.15rem;
+        margin: 0;
+    }
+
+    ul li {
+        margin: 15px auto;
+    }
+
+    ul li label {
+        font-size: 1.15rem;
+    }
+
+    .feedback {
+        font-size: 1.25rem;
+    }
+
+    #submit {
+        font-size: 1.25rem;
+        padding: 6px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #congrats {
+        font-size: 1.75rem;
+    }
+
+    #score, #highscore {
+        font-size: 1.5rem;
+    }   
+}
+

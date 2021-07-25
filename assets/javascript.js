@@ -269,8 +269,6 @@ var timer = function(i, callback) {
             }
     }, 1000);
 }
-
-
 // main function that runs the quiz
 var main = function() {
     // gets the question number from local storage
@@ -301,11 +299,11 @@ var main = function() {
 
             // checks to see which option has been chosen and compares it to the answer of the question
             if (choiceOneEl.checked === true && optionOneEl.textContent === questionAsked.a) {
-                feedbackEl.textContent = "You are correct!"
+                feedbackEl.textContent = "Correct!"
                 localStorage.setItem("feedback", feedbackEl.textContent);
                 increaseScore();
             } else if (choiceTwoEl.checked === true && optionTwoEl.textContent === questionAsked.a) {
-                feedbackEl.textContent = "You are correct!"
+                feedbackEl.textContent = "Correct!"
                 localStorage.setItem("feedback", feedbackEl.textContent);
                 increaseScore();
             } else if (choiceThreeEl.checked === true && optionThreeEl.textContent === questionAsked.a) {
@@ -313,11 +311,11 @@ var main = function() {
                 localStorage.setItem("feedback", feedbackEl.textContent);
                 increaseScore();
             } else if (choiceFourEl.checked === true && optionFourEl.textContent === questionAsked.a) {
-                feedbackEl.textContent = "You are correct!"
+                feedbackEl.textContent = "Correct!"
                 localStorage.setItem("feedback", feedbackEl.textContent);
                 increaseScore();
             } else {
-                feedbackEl.textContent = "You are horribly terribly wrong!"
+                feedbackEl.textContent = "Wrong!"
                 localStorage.setItem("feedback", feedbackEl.textContent);
             };
 
